@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity6", "Unity6.csproj", "{CDCC5D82-D9A2-406B-35FB-BDEBAE2FE5F1}"
 EndProject
 Global

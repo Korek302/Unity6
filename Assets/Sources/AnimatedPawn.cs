@@ -95,15 +95,15 @@ public class AnimatedPawn : Pawn
     IEnumerator MoveLimbs()
     {
         float time = 0;
-        while (time <= 1)
+        while (time <= 0.5f)
         {
             int i = 0;
             foreach (Rigidbody limb in _limbs)
             {
-                limb.useGravity = false;
                 limb.interpolation = RigidbodyInterpolation.None;
                 limb.GetComponent<Collider>().enabled = false;
                 limb.isKinematic = true;
+                limb.useGravity = false;
                 limb.transform.localPosition = Vector3.Lerp(limb.transform.localPosition, limbPositionList[i], time);
                 limb.transform.localRotation = Quaternion.Lerp(limb.transform.localRotation, limbRotationList[i], time);
                 i++;
